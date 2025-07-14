@@ -1655,18 +1655,605 @@
 
 
 
-const points = 500;
+// const points = 500;
 
-if (points > 1500) {
-    console.log("level 1");
+// if (points > 1500) {
+//     console.log("level 1");
 
-} else if (points > 500) {
-    console.log("level 2");
+// } else if (points > 500) {
+//     console.log("level 2");
 
-}else if (points < 500) {
-    console.log("level 3");
+// }else if (points < 500) {
+//     console.log("level 3");
 
-} else {
-    console.log("level 4");
+// } else {
+//     console.log("level 4");
 
-}
+// }
+
+
+
+
+// const balance = 500;
+// let message;
+
+// if (balance >= 0) {
+//     message = "Positive";
+
+// } else {
+//     message = "Negative";
+
+// }
+// console.log(message);
+
+
+
+//  тернарний оператор шоб повернути значення
+
+// const balance = 500;
+// const message = balance >= 0 ? 'Positive' : 'Negative';
+// console.log(message);
+
+
+// const balance = -500;
+// const message = balance >= 0 ? 'Positive' : 'Negative';
+// console.log(message);
+
+
+
+
+// const balance = -500;
+// const message = balance >= 1000 ? 'more 1000' : balance >= 500 ? 'more 500' : "Negative";
+// console.log(message);
+
+
+
+
+
+// const balance = 500;
+// let message;
+// if (points > 1500) {
+//     console.log("level 1");
+
+// } else if (points > 500) {
+//     console.log("level 2");
+
+// }else if (points < 500) {
+//     console.log("level 3");
+
+// } else {
+//     console.log("level 4");
+
+// }
+
+
+
+
+// области видимості
+
+
+
+// глобальна
+
+// const a = 15;
+// console.log(a);
+
+
+
+// const a = 15;
+// if(true){
+// console.log(a);
+
+// }
+
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// console.log(b);
+// }
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// console.log(a);
+// }
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// }
+// if (true) {
+//     const c = 5;
+// console.log(a);
+// }
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// }
+// if (true) {
+//     const c = 5;
+// console.log(c);
+// }
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// }
+// if (true) {
+//     const c = 5;
+// console.log(b);
+// }
+
+
+// const a = 15;
+// if (true) {
+//     const b = 10;
+// }
+// if (true) {
+//     const a = 5;
+// console.log(a);
+// }
+
+
+
+// const hours = 14;
+// const minutes = 0;
+// let time;
+// if (minutes > 0) {
+//     time = '${hours} h. ${minutes} mn.'
+// } else {
+//     time = '${hours} h';
+// }
+// console.log(time);
+
+
+
+
+// const hours = 14;
+// const minutes = 0;
+// let time;
+// const message = minutes > 0 ? '${hours} h. ${minutes} mn.' : '${hours} h.';
+// console.log(message);
+
+
+
+// const hours = 14;
+// const minutes = 10;
+// let time;
+// const message = minutes > 0 ? '${hours} h. ${minutes} mn.' :
+//     '${hours} h';
+// console.log(message);
+
+
+
+// const deadline = 10;
+// if (deadline === 0) {
+//     console.log("Today");
+// } else if (deadline === 1) {
+//     console.log("Tomorrow");
+// } else if (deadline === 2) {
+//     console.log("Overtomorrow");
+// } else {
+//     console.log("Date in the future");
+// }
+
+// const deadline = 0;
+// if (deadline === 0) {
+//     console.log("Today");
+// } else if (deadline === 1) {
+//     console.log("Tomorrow");
+// } else if (deadline === 2) {
+//     console.log("Overtomorrow");
+// } else {
+//     console.log("Date in the future");
+// }
+
+
+// const user = "Alice";
+// switch (user) {
+//     case "Petya":
+//         console.log("case 1");
+//         break;
+//     case "Alice":
+//         console.log("case 2");
+//         break;
+//         case "Yura":
+//             console.log("case 3");
+//         break;
+//     default:
+//         console.log("default");
+// }
+ 
+
+// const user = "Alice";
+// switch (user) {
+//     case "Petya":
+//         console.log("case 1");
+//         // break;
+//     case "Alice":
+//         console.log("case 2");
+//         // break;
+//         case "Yura":
+//             console.log("case 3");
+//         // break;
+//     default:
+//         console.log("default");
+// }
+ 
+
+
+// function foo() {
+// switch(user) {
+//     case "Petya":
+//         console.log("case 1");
+//         return 1;
+//     case "Alice":
+//         console.log("case 2");
+//         return 2;
+//         case "Yura":
+//             console.log("case 3");
+//         return 3;
+//     default:
+//         console.log("default");
+// }
+// }
+// console.log(foo());
+
+
+
+
+
+
+
+// const deadline = 0;
+// switch (deadline) {
+//     case 0:
+//         console.log("Today");
+//         break;
+//         case 1:
+//             console.log("Tomorrow");
+//         break;
+//         case 2:
+//             console.log("Overmorrow");
+//         break;
+//         defoult:
+//         console.log("Date in the future");
+    
+// }
+
+
+// const deadline = '0';
+// switch (deadline) {
+//     case 0:
+//         console.log("Today");
+//         break;
+//         case 1:
+//             console.log("Tomorrow");
+//         break;
+//         case 2:
+//             console.log("Overmorrow");
+//         break;
+//         default:
+//         console.log("Date in the future");
+    
+// }
+
+
+
+// const option = 1;
+// let message = "";
+// switch (option) {
+//     case 1:
+//         message = 'zabrati tovar';
+//         break;
+//         case 1:
+//             message = 'dostavka zavtra';
+//         break;
+//         case 1:
+//             message = 'otpravca segodnea';
+//         break;
+//     default:
+//         message = 'perezvonit menadzer';
+// }
+// console.log(message);
+    
+
+
+
+// ---------------Масиви----------------
+
+// const planets = ['Earth', 'Mars', 'Venus']; // масив рядків
+// const numbers = [1, 2, 3, 4, 5]; // масив чисел
+// const mixed = ['apple', 10, true]; // масив з елементами різних типів
+
+// arrayName[index]
+
+
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+// console.log(planets[0]); // 'Earth'
+// console.log(planets[1]); // 'Mars'
+// console.log(planets[2]); // 'Venus'
+
+
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+// const firstElement = planets[0];
+// console.log(firstElement); // 'Earth'
+
+
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+// console.log(planets[3]); // undefined
+// console.log(planets[999]); // undefined
+
+
+
+
+// Перевизначення значення елемента
+    
+    
+    
+// const planets = ['Earth', 'Mars', 'Venus', 'Uranus'];
+// planets[0] = 'Jupiter';
+// planets[2] = 'Neptune';
+// console.log(planets); // ['Jupiter', 'Mars', 'Neptune', 'Uranus']
+
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+
+
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+// console.log(fruits);
+
+
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+// console.log(planets.length); // 3
+
+
+
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+
+// if(planets.length >= 3) {
+// 	console.log("3 or more elements");
+// } else {
+// 	console.log("3 or less elements");
+// }
+
+
+
+// function getOrderQuantity(order) {
+//   return order.length;
+// }
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus"];
+// const lastElementIndex = planets.length - 1;
+// console.log(planets[lastElementIndex]); // "Venus"
+
+
+
+
+// function getLastElementMeta(array) {
+//   const lastIndex = array.length - 1;
+//   const lastElement = array[lastIndex];
+//   return [lastIndex, lastElement];
+// }
+
+
+
+
+
+// let a = 5;
+
+// let b = a;
+// console.log(a); // 5
+// console.log(b); // 5
+// // Присвоєння за значенням, у пам'яті буде створено ще
+// // одну ячейку, в яку буде скопійовано значення 5
+
+// // Змінимо значення a
+// a = 10;
+// console.log(a); // 10
+// console.log(b); // 5 Значення b не змінилося, оскільки це окрема копія
+
+
+
+
+
+// const a = ["Mango", "Poly"];
+// const b = a;
+// console.log(a); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
+
+
+
+
+
+
+// const a = ["Mango", "Poly"];
+// const b = a;
+// console.log(a); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
+
+// a[1] = "Jacob";
+// console.log(a); // ["Mango", "Jacob"]
+// console.log(b); // ["Mango", "Jacob"]
+
+
+
+
+// const a = ["Mango", "Poly"];
+// const b = a;
+// console.log(a); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
+
+// a[1] = "Jacob";
+// console.log(a); // ["Mango", "Jacob"]
+// console.log(b); // ["Mango", "Jacob"]
+
+// b[0] = "Ajax";
+// console.log(a); // ["Ajax", "Jacob"]
+// console.log(b); // ["Ajax", "Jacob"]
+
+
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3];
+
+// console.log(arr1 === arr2); // false
+// console.log([] === []); // false
+
+
+
+
+// const arr1 = [1, 2, 3];
+// const arr2 = arr1;
+// arr1[1] = 1;
+// arr2[2] = 1;
+
+
+
+
+// const array = [1, true, "Poly"];
+// console.log(String(array));// "1,true,Poly"
+// console.log(array + "5"); // "1,true,Poly5"
+
+
+// console.log(Number([])); // 0
+// console.log(Number([1])); // 1
+// console.log(Number([1, 2, 3])); // NaN
+
+
+
+
+// const emptyArray = [];
+// const nonEmptyArray = [1, 2, 3];
+
+// console.log(Boolean(emptyArray)); // true
+// console.log(Boolean(nonEmptyArray)); // true
+
+// if(emptyArray) {
+// 	console.log("if is in progress")
+// } else {
+// 	console.log("else is not performed")
+// }
+
+// if(nonEmptyArray) {
+// 	console.log("if is in progress")
+// } else {
+// 	console.log("else is not performed")
+// }
+
+
+
+
+// const array= [false];
+// const result = array ? "A" : "B";
+
+
+
+
+
+// const words = ["JavaScript", "is", "amazing"];
+// console.log(words.join("")); // 'JavaScriptisamazing'
+// console.log(words.join(" ")); // 'JavaScript is amazing'
+// console.log(words.join("-")); // 'JavaScript-is-amazing'
+
+
+
+
+// function transformString(string) {
+// 	const words = string.split("_");
+// 	return words.join("-");
+// }
+
+// transformString("user_age"); // "user-age"
+// transformString("price_per_droid"); // "price-per-droid"
+
+
+
+
+// function getLength(array) {
+//   const string = array.join("");
+//   return string.length;
+// }
+
+
+
+
+
+// const name = "Mango";
+// const letters = name.split("");
+// console.log(letters); // ["M", "a", "n", "g", "o"]
+
+// const message = "JavaScript essentials";
+// const words = message.split(" ");
+// console.log(words); // ["JavaScript", "essentials"]
+
+// const slug = "amazing-french-recipes";
+// const slugParts = slug.split("-");
+// console.log(slugParts); // ["amazing", "french", "recipes"]
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+// console.log(planets.slice(0, 2)); // ['Earth', 'Mars']
+// console.log(planets.slice(0, 4)); // ['Earth', 'Mars', 'Venus', 'Jupiter']
+// console.log(planets.slice(1, 3)); // ['Mars', 'Venus']
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+// const result = planets.slice(1, 3);
+// console.log(result); // ["Mars", "Venus"]
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+// console.log(planets.slice()); // ["Earth", "Mars", "Venus", "Jupiter", "Saturn"]
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+// console.log(planets.slice(1)); // ["Mars", "Venus", "Jupiter", "Saturn"]
+// console.log(planets.slice(2)); // ["Venus", "Jupiter", "Saturn"]
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter", "Saturn"];
+// console.log(planets.slice(-2)); // ["Jupiter", "Saturn"]
+
+
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(2);
+
+
+
+
