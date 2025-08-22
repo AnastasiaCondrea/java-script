@@ -2257,3 +2257,390 @@
 
 
 
+// const firstArray = ["Mercury", "Venus"];
+// const secondArray = ["Mars", "Jupiter"];
+// const result = firstArray.concat(secondArray);
+
+// console.log(result); // ["Mercury", "Venus", "Mars", "Jupiter"];
+
+
+
+// const firstArray = ["Mercury", "Venus"];
+// const secondArray = ["Mars", "Jupiter"];
+// const result = firstArray.concat(secondArray);
+
+// console.log(firstArray); // ["Mercury", "Venus"];
+// console.log(secondArray); // ["Mars", "Jupiter"];
+// console.log(result); // ["Mercury", "Venus", "Mars", "Jupiter"];
+
+
+
+
+// const firstArray = ["Mercury", "Venus"];
+// const secondArray = ["Mars", "Jupiter"];
+// const thirdArray = ["Saturn", "Neptune"];
+
+// console.log(firstArray.concat(secondArray, thirdArray));
+// // ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Neptune'];
+
+// console.log(firstArray.concat(thirdArray, secondArray));
+// // ['Mercury', 'Venus', 'Saturn', 'Neptune', 'Mars', 'Jupiter', ];
+
+
+
+
+
+
+// array.indexOf(elem)
+
+
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi", "Poly"];
+// console.log(clients.indexOf("Poly")); // 2
+// console.log(clients.indexOf("Monkong")); // -1
+
+
+
+// function getSlice(array, value) {
+//   const index = array.indexOf(value);
+//   if (index === -1) {
+//     return [];
+//   }
+//   return array.slice(0, index + 1);
+// }
+
+
+
+
+// array.push(element1, element2, ..., elementN);
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// planets.push("Jupiter");
+// console.log(planets); // ['Earth', 'Mars', 'Venus', 'Jupiter']
+
+// planets.push("Saturn", "Neptune");
+// console.log(planets); // ['Earth', 'Mars', 'Venus', 'Jupiter', "Saturn", "Neptune"]
+
+
+
+
+
+// const tags = [];
+
+// for(let i = 0; i < 3; i += 1) {
+// 	tags.push(`tag-${i}`);
+// }
+
+// console.log(tags); // ["tag-0", "tag-1", "tag-2"]
+
+
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// for (let i = 0; i < planets.length; i += 1) {
+//   console.log(planets[i]);
+// }
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i++) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+
+// function getEvenNumbers(start, end) {
+//   const evenNumbers = [];
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       evenNumbers.push(i);
+//     }
+//   }
+//   return evenNumbers;
+// }
+
+
+
+// array.includes(element)
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// console.log(planets.includes("Earth")); // true
+// console.log(planets.includes("Mars")); // true
+// console.log(planets.includes("Venus")); // true
+// console.log(planets.includes("Jupiter")); // false
+
+
+// const fruits = ["apple", "banana", "orange"];
+
+// if (fruits.includes("banana")) {
+//   console.log("The array has an element banana");
+// } else {
+//   console.log("Array does not contain banana element");
+// }
+
+
+
+
+
+
+// function getCommonElements(array1, array2) {
+//   const commonElements = [];
+
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array2.includes(array1[i])) {
+//       commonElements.push(array1[i]);
+//     }
+//   }
+
+//   return commonElements;
+// }
+
+
+
+
+// for (const element of array) {
+//   // тіло циклу
+// }
+
+
+
+
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// for (const planet of planets) {
+//   console.log(planet);
+// }
+
+
+
+
+
+// function sum(a, b) {
+//   console.log(arguments);
+//   return a + b;
+// }
+
+// sum(2, 5);
+
+
+
+
+
+// function multiply() {
+//   let total = 1;
+
+//   for (const arg of arguments) {
+//     total *= arg;
+//   }
+
+//   return total;
+// }
+
+// console.log(multiply(1, 2, 3)); //  6
+// console.log(multiply(1, 2, 3, 4)); //  24
+// console.log(multiply(1, 2, 3, 4, 5)); //  120
+
+
+
+
+
+// function foo() {
+//   // У змінній args буде повноцінний масив з усіх аргументів
+//   const args = Array.from(arguments);
+// 	return args.join("-");
+// }
+
+// foo(1, 2, 3); // Поверне "1-2-3"
+
+
+
+
+// function greet(username = "Guest") {
+//   console.log(`Hello, ${username}!`);
+// }
+
+// greet("Jacob"); // "Hello, Jacob!"
+// greet();        // "Hello, Guest!"
+
+
+
+
+
+// function count(from, to, step = 1) {
+//   console.log(`from: ${from}, to: ${to}, step: ${step}`);
+
+//   for (let i = from; i <= to; i += step) {
+//   // ...
+//   }
+// }
+
+// count(1, 15, 4); // "from: 1, to: 15, step: 4"
+// count(1, 15); // "from: 1, to: 15, step: 1"
+
+
+
+
+// function multiply(x, y, z) {
+//   console.log(x * y * z);
+// }
+
+
+
+
+
+
+// (function expression)
+
+
+
+// // ❌ Помилка! Не працює виклик до оголошення
+// multiply(1, 2, 3);
+
+// const multiply = function (x, y, z) {
+//   console.log(x * y * z);
+// };
+
+// // ✅ Працює виклик після оголошення
+// multiply(4, 5, 6);
+
+
+
+
+
+
+
+// ї (function declaration)
+
+// // ✅ Працює виклик перед оголошенням
+// multiply(1, 2, 3);
+
+// function multiply(x, y, z) {
+//   console.log(x * y * z);
+// }
+
+// // ✅ Працює виклик після оголошення
+// multiply(4, 5, 6);
+
+
+
+// const globalValue = 10;
+
+// console.log(globalValue); // 10
+
+// function foo() {
+//   console.log(globalValue); // 10
+// }
+
+// for (let i = 0; i < 5; i+=1) {
+//   console.log(globalValue); // 10
+
+//   if (i === 2) {
+//     console.log(globalValue); // 10
+//   }
+// }
+
+
+
+
+
+
+// function foo() {
+//   const a = 20;
+//   console.log(a); // 20
+
+//   for (let i = 0; i < 5; i+=1) {
+//     console.log(a); // 20
+
+//     if (i === 2) {
+//       console.log(a); // 20
+//     }
+//   }
+// }
+
+// // ❌ Помилка! Змінна a не доступна в цій області видимості
+// console.log(a);
+
+// for (let i = 0; i < 3; i+=1) {
+//   // ❌ Помилка! Змінна a не доступна в цій області видимості
+//   console.log(a);
+// }
+
+
+
+
+// for (let i = 0; i < 5; i+=1) {
+//   const a = 20;
+//   console.log(a); // 20
+
+//   if (i === 2) {
+//     const b = 30;
+//     console.log(a); // 20
+//     console.log(b); // 30
+//   }
+
+//   if (i === 3) {
+//     console.log(a); // 20
+
+//     // ❌ Помилка! Змінна b не доступна в цій області видимості
+//     console.log(b);
+//   }
+// }
+
+
+
+
+// {
+// const name="Mango"
+// console.log(name) // "Mango"
+// }
+// console.log(name) // значення глобальної змінної name. Помилки в консолі не буде
+
+
+
+
+
+
+// function fnA() {
+//   console.log("Log inside fnA function before calling fnB");
+//   fnB();
+//   console.log("Log inside fnA function after fnB call");
+// }
+
+// function fnB() {
+//   console.log("Log inside fnB function");
+// }
+
+// console.log("Log before calling fnA");
+// fnA();
+// console.log("Log after calling fnA");
+
+// // "Log before calling fnA"
+// // "Log inside fnA function before calling fnB"
+// // "Log inside fnB function"
+// // "Log inside fnA function after fnB call"
+// // "Log after calling fnA"
+
+
+// function bar() {
+//   console.log("bar");
+// }
+
+// function baz() {
+//   console.log("baz");
+// }
+
+// function foo() {
+//   console.log("foo");
+//   bar();
+//   baz();
+// }
+
+// foo();
